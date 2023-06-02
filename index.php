@@ -28,6 +28,12 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <?php
+  include_once("./config/constantes.php");
+  include_once("./config/conexao.php");
+
+  include_once("./func/func.php");
+  ?>
 
 </head>
 
@@ -63,7 +69,7 @@
     <?php include_once("./components/avaliacao.php"); ?>
     <!-- FIM AVALIAÇÃO -->
 
-  </main>
+  </main> <!-- FIM MAIN  -->
 
   <!-- EVENTOS -->
   <?php include_once("./components/eventos.php"); ?>
