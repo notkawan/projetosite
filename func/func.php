@@ -1,8 +1,8 @@
 <?php
-function listarTodosRegistros($campos,$tabela,$ativo){
+function listarTodosRegistros($tabela,$campos,$ativo){
     $conn = conectar();
     try{
-        $listar = $conn->prepare("SELECT $campos FROM $tabela WHERE $ativo = '$ativo'");
+        $listar = $conn->prepare("SELECT $campos FROM $tabela WHERE ativo = '$ativo'");
         $listar->execute();
 
         if($listar->rowCount() > 0){
